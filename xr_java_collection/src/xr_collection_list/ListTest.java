@@ -27,6 +27,8 @@ public class ListTest {
 		al.set(2, "demo6");
 		System.out.println("改正后的集合：" + al);
 
+		System.out.println("集合区域的元素：" + al.subList(1, 3));
+
 		System.out.print("得到集合元素：");
 		for (int x = 0; x < al.size(); x++) {
 			System.out.println("size(" + x + ") = " + al.get(x) + " ");
