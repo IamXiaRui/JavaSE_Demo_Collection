@@ -13,6 +13,7 @@ import java.util.TreeSet;
 public class TreeSetTest_Two {
 
 	public static void main(String[] args) {
+		// 集合实现比较器接口
 		TreeSet ts = new TreeSet(new xrCompare());
 
 		// TreeSet 中的对象必须具备比较性 假如没有比较性 则会报异常
@@ -32,6 +33,7 @@ public class TreeSetTest_Two {
 
 }
 
+// 实现比较器
 class xrCompare implements Comparator {
 
 	public int compare(Object o1, Object o2) {
