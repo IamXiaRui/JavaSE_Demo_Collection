@@ -42,6 +42,7 @@ class xrCompare implements Comparator {
 
 		int num = p1.getName().compareTo(p2.getName());
 
+		//判断次要顺序 很重要 ！
 		if (num == 0) {
 			if (p1.getAge() > p2.getAge()) {
 				return 1;
