@@ -9,7 +9,7 @@ package xr_collection_set;
 import java.util.Iterator;
 import java.util.TreeSet;
 
-public class TreeSetTest {
+public class TreeSetTest_One {
 
 	public static void main(String[] args) {
 		TreeSet ts = new TreeSet();
