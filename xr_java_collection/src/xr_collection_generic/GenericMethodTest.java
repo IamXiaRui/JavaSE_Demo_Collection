@@ -12,8 +12,10 @@ public class GenericMethodTest {
 		gm.getB("5");
 
 		gm.getC(5);
+		gm.getC("5");
 
 		gm.getD(5);
+		gm.getD("5");
 	}
 
 }
