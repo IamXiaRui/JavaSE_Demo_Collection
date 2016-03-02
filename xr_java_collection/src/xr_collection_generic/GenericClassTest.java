@@ -32,7 +32,6 @@ class Generic<Person> {
 	private Person p;
 
 	public Person getP() {
-		System.out.println(p);
 		return p;
 	}
 
