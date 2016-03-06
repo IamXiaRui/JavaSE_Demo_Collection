@@ -4,6 +4,7 @@ package xr_collection_map;
  * 
  * 多重集合的使用方法
  * 
+ * 注意：一般加入对象 使用List集合  此例中的顺序是无序的。
  * */
 
 import java.util.HashMap;
