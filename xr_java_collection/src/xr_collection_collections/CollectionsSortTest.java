@@ -17,11 +17,11 @@ public class CollectionsSortTest {
 	public static void main(String[] args) {
 		List<String> list = new ArrayList<String>();
 
-		list.add("asd");
-		list.add("fgafg");
-		list.add("afvcxzv");
-		list.add("sthhgn");
-		list.add("ghahfn");
+		list.add("a");
+		list.add("bb");
+		list.add("abcd");
+		list.add("xxx");
+		list.add("kkkk");
 
 		sop("排序前 ：");
 		sop(list);
@@ -36,12 +36,12 @@ public class CollectionsSortTest {
 		sop("最大元素为 ： " + max_one);
 
 		// 加入比较器的静态方法
-		Collections.sort(list, new CollectionsCom());
+		Collections.sort(list, new CollectionsCom_one());
 		sop("按照字符串长度排序后 ：");
 		sop(list);
 
 		// 返回带比较器的最大元素
-		String max_two = Collections.max(list, new CollectionsCom());
+		String max_two = Collections.max(list, new CollectionsCom_one());
 		sop("最大长度元素为 ： " + max_two);
 
 	}
@@ -53,7 +53,7 @@ public class CollectionsSortTest {
 }
 
 // 按照字符串长度的比较器
-class CollectionsCom implements Comparator<String> {
+class CollectionsCom_one implements Comparator<String> {
 
 	@Override
 	public int compare(String s1, String s2) {
