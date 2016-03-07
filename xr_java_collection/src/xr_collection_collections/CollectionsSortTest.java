@@ -5,6 +5,7 @@ package xr_collection_collections;
  * 
  * 两种排序方式 ，一种加入比较器 一种没有加入比较器
  * 
+ *返回集合中的指定最大或者最小元素
  * */
 import java.util.ArrayList;
 import java.util.Collections;
@@ -30,10 +31,18 @@ public class CollectionsSortTest {
 		sop("排序后 ：");
 		sop(list);
 
+		// 返回最大元素
+		String max_one = Collections.max(list);
+		sop("最大元素为 ： " + max_one);
+
 		// 加入比较器的静态方法
 		Collections.sort(list, new CollectionsCom());
 		sop("按照字符串长度排序后 ：");
 		sop(list);
+
+		// 返回带比较器的最大元素
+		String max_two = Collections.max(list, new CollectionsCom());
+		sop("最大长度元素为 ： " + max_two);
 
 	}
 
