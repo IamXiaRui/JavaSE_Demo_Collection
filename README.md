@@ -1,5 +1,8 @@
 #Java中的集合
 
+###博客地址
+http://www.iamxiarui.com/2016/03/17/java：集合1-基本概念/
+
 ##Collection类
 
 ###基本概念
